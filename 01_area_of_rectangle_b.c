@@ -18,5 +18,4 @@ int main()
     printf("\n The area of rectangle is=%d",length*breath);
 
     return 0;
-
 }
