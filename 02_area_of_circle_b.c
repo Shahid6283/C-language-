@@ -15,5 +15,4 @@ int main()
     printf("\nThe area of the circle is = %f",a);    // This will print the area of the circle 
 
     return 0;
-
 }
