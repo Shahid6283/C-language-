@@ -1,22 +1,25 @@
 #include<stdio.h>
 
-// Find the Sum of nth Odd Numbers
+// Find the Sum of nth Odd Numbers (between start to end)
 
 int main()
 {
-    int n,i,sum=0;
+    int i,start,end,sum=0;
 
-    printf("Enter the Number : ");
-    scanf("%d",&n);
+    printf("Enter the Starting Point : ");
+    scanf("%d",&start);
+
+    printf("Enter the Ending Point : ");
+    scanf("%d",&end);
 
     printf("\nThe Odd Numbers are : ");
 
-    for(i=1; i<=n; i++){
+    for(i=start; i<=end; i++){
         printf("%d ",(2*i-1));
         sum+=(2*i-1);
     }
 
-    printf("\nThe Sum of %d Odd Numbers is : %d",n,sum);
+    printf("\nThe Sum of Odd Numbers is : %d",sum);
 
     return 0;
 }
