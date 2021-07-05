@@ -1,20 +1,21 @@
 #include<stdio.h>
+#include<math.h>
 
-// Find the Sum of Series of (1 + 1/2 + 1/3 + ......... + 1/n)
+// Find the Sum of Series (1 - 8 + 27 - 64 + ........ + n)
 
 int main()
 {
-    int num,i;
-    float sum=0;
+    int num,i,c,sum=0;
 
     printf("Enter the Number : ");
     scanf("%d",&num);
 
-    for(i=1; i<=num; i++){
-        sum+=1.0/i;
+    for(i=0; i<=num; i++){
+        c=i*i*i;
+        sum+=pow(-1,(i+1))*c;
     }
 
-    printf("\nThe Sum is : %f",sum);
+    printf("\nThe Sum is : %d",sum);
 
     return 0;
 }
