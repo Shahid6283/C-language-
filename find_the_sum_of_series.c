@@ -1,20 +1,23 @@
 #include<stdio.h>
 #include<math.h>
 
-// Find the Sum of Series (1 + x2 + x3 + ........ + xn)
+// Find the Sum of Series (1x + 2x + 3x + ........ + nx)
 
 int main()
 {
-    int n,x,i,sum=1;
+    int n,x,i,j;
+    int sum=0;
     
     printf("Enter the Value of n : ");
     scanf("%d",&n);
 
-    printf("Enter the Value of x : ");
-    scanf("%d",&x);
+    for(i=1; i<=n; i++){
 
-    for(i=3; i<=n; i=i+2){
-        sum+=pow(x,i);
+        for(j=i; j<=i; ++j){
+
+        sum+=pow(i,j);
+        
+        }
     }
 
     printf("\nThe Sum is : %d",sum);
