@@ -17,4 +17,5 @@ int main()
     printf("The Total Payable Amount is : %f",price);
 
     return 0;
+    
 }
