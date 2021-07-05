@@ -1,18 +1,20 @@
 #include<stdio.h>
 #include<math.h>
 
-// Find the Sum of Series (1 - 8 + 27 - 64 + ........ + n)
+// Find the Sum of Series (1 + x2 + x3 + ........ + xn)
 
 int main()
 {
-    int num,i,c,sum=0;
+    int n,x,i,sum=1;
+    
+    printf("Enter the Value of n : ");
+    scanf("%d",&n);
 
-    printf("Enter the Number : ");
-    scanf("%d",&num);
+    printf("Enter the Value of x : ");
+    scanf("%d",&x);
 
-    for(i=0; i<=num; i++){
-        c=i*i*i;
-        sum+=pow(-1,(i+1))*c;
+    for(i=3; i<=n; i=i+2){
+        sum+=pow(x,i);
     }
 
     printf("\nThe Sum is : %d",sum);
